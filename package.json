@@ -1,0 +1,60 @@
+{
+  "name": "kevin-allen-klicker",
+  "version": "0.2.0",
+  "description": "Cookie Clicker but I replace the images with pictures of Kevin Allen! This is a Cookie Clicker overhaul, where my goal is to completely replace the assets with custom ones! (and release a Steam Workshop version)",
+  "main": "electronEntry.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aspenini/Kevin-Allen-Klicker.git"
+  },
+  "author": "Aspenini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aspenini/Kevin-Allen-Klicker/issues"
+  },
+  "homepage": "https://github.com/Aspenini/Kevin-Allen-Klicker#readme",
+  "devDependencies": {
+    "electron": "^33.0.2",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.kevin.allen.klicker",
+    "productName": "Kevin Allen Klicker",
+    "copyright": "Copyright © 2024 Aspenini",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!node_modules/.bin",
+      "!.git"
+    ],
+    "win": {
+      "icon": "kevin-allen.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Game"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.games"
+    }
+  }
+}

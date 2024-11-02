@@ -1,0 +1,28 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.kevin.allen.klicker
+productName: Kevin Allen Klicker
+copyright: Copyright © 2024 Aspenini
+files:
+  - filter:
+      - '**/*'
+      - '!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}'
+      - '!node_modules/.bin'
+      - '!.git'
+win:
+  icon: kevin-allen.ico
+  target:
+    - nsis
+    - zip
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Game
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.games
+electronVersion: 33.0.2
