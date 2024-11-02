@@ -1,6 +1,6 @@
 {
   "name": "kevin-allen-klicker",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Cookie Clicker but I replace the images with pictures of Kevin Allen! This is a Cookie Clicker overhaul, where my goal is to completely replace the assets with custom ones! (and release a Steam Workshop version)",
   "main": "electronEntry.js",
   "scripts": {
