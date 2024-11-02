@@ -50,6 +50,7 @@
       "category": "Game"
     },
     "mac": {
+      "icon": "kevin-allen-set.icns",
       "target": [
         "dmg",
         "zip"
